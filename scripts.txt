@@ -1,0 +1,32 @@
+CREATE TABLE Login (
+userid int PRIMARY KEY,
+password varchar(20)
+);
+
+
+
+CREATE TABLE task(
+taskid int PRIMARY KEY,
+ownerid int,
+name varchar(40),
+description varchar(200),
+status varchar(15),
+priority varchar(10),
+notes varchar(100),
+isBookmarked int,
+createdon date,
+statuschangedon date);
+
+
+CREATE TABLE users(
+userid int primary key,
+username varchar(20),
+password varchar(20),
+email varchar(20),
+firstname varchar(15),
+lastname varchar(15),
+contactno varchar(15),
+role varchar(10),
+isactive int,
+dob date,
+created_on date);
